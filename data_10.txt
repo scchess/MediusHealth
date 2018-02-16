@@ -1,182 +1,182 @@
-up 24
-she 24
-head 15
-when 27
-me 131
-dr 36
-really 12
-old 14
-even 16
-from 16
-hear 22
-of 86
-bp 18
-so 76
-was 44
-the 188
-my 114
-also 12
-i've 11
-though 12
-is 154
-out 40
-know 20
-3 16
-ear 43
-heart 18
-he 349
-ate 41
-im 36
-all 55
-this 40
-dizzy 13
-start 10
-yo 39
-low 52
-does 12
-doc 15
-for 43
-now 31
-happen 13
-drink 10
-any 40
-to 192
-could 15
-problem 19
-there 13
-2 21
-been 25
-anyone 13
-doctor 14
-like 27
-pain 14
-1 50
-in 379
-sure 60
-just 14
-min 19
-go 36
-but 41
-what 24
-am 44
-work 11
-other 13
-here 24
-use 23
-then 10
-back 11
-feel 34
-which 12
-ever 22
-/ 37
-take 13
-about 21
-or 151
-per 14
-not 35
-they 16
-i'm 15
-as 139
-be 102
-over 12
-see 16
-ie 51
-feeling 11
-some 23
-by 10
-eat 22
-one 28
-on 190
-blood 65
-i' 30
-can 35
-5 30
-i 1459
-and 164
-that 49
-tension 15
-time 21
-loo 75
-you 23
-his 46
-pressure 58
-diet 11
-day 17
 - 19
-more 10
-g 405
-did 12
-do 81
-get 25
-ter 42
-rate 11
-have 66
-stand 12
-an 298
-drop 10
-if 32
-her 58
-hi 131
-down 15
-4 13
-7 18
-with 38
-most 14
-after 16
-way 18
-very 29
-lot 10
-has 21
+/ 37
+1 50
 10 16
-at 196
-help 13
-year 13
-faint 17
-a 1540
-act 14
-it 148
-hypotension 10
-thing 38
-than 13
-we 56
+2 21
+3 16
+4 13
+5 30
+7 18
 9 25
-no 102
-had 28
-are 18
-felt 10
-i a 32
-and i 26
-to the 10
-for a 13
-blood pressure 54
-my blood 11
-on and 12
-and a 13
-have been 11
-at i 20
-when i 14
-on an 13
+a 1540
+about 21
+act 14
+after 16
+all 55
+also 12
+am 44
+an 298
 an a 10
-had a 12
-i do 12
-that i 14
-low blood 18
-g i 17
-i am 22
-g a 23
-have be 13
-i was 14
-to g 13
-i have 38
+and 164
+and a 13
+and i 26
+any 40
+anyone 13
+are 18
+as 139
 as a 16
-to get 10
-or a 18
-my he 10
-in the 11
-is a 16
-on a 20
-g to 13
-i can 13
+at 196
+at i 20
+ate 41
+back 11
+be 102
+been 25
+blood 65
+blood pressure 54
+bp 18
+but 41
 but i 11
+by 10
+can 35
+could 15
+day 17
+did 12
+diet 11
+dizzy 13
+do 81
+doc 15
+doctor 14
+does 12
+down 15
+dr 36
+drink 10
+drop 10
+ear 43
+eat 22
+even 16
+ever 22
+faint 17
+feel 34
+feeling 11
+felt 10
+for 43
+for a 13
+from 16
+g 405
+g a 23
+g i 17
+g to 13
+get 25
+go 36
+had 28
+had a 12
+happen 13
+has 21
+have 66
+have be 13
+have been 11
+he 349
+head 15
+hear 22
+heart 18
+help 13
+her 58
+here 24
+hi 131
+his 46
+hypotension 10
+i 1459
+i a 32
+i am 22
+i can 13
+i do 12
+i have 38
+i was 14
+i' 30
+i'm 15
+i've 11
+ie 51
+if 32
+im 36
+in 379
+in the 11
+is 154
+is a 16
+it 148
+just 14
+know 20
+like 27
+loo 75
+lot 10
+low 52
+low blood 18
 low blood pressure 18
+me 131
+min 19
+more 10
+most 14
+my 114
+my blood 11
 my blood pressure 11
+my he 10
+no 102
+not 35
+now 31
+of 86
+old 14
+on 190
+on a 20
+on an 13
+on and 12
+one 28
+or 151
+or a 18
+other 13
+out 40
+over 12
+pain 14
+per 14
+pressure 58
+problem 19
+rate 11
+really 12
+see 16
+she 24
+so 76
+some 23
+stand 12
+start 10
+sure 60
+take 13
+tension 15
+ter 42
+than 13
+that 49
+that i 14
+the 188
+then 10
+there 13
+they 16
+thing 38
+this 40
+though 12
+time 21
+to 192
+to g 13
+to get 10
+to the 10
+up 24
+use 23
+very 29
+was 44
+way 18
+we 56
+what 24
+when 27
+when i 14
+which 12
+with 38
+work 11
+year 13
+yo 39
+you 23

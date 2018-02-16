@@ -19,8 +19,8 @@ def readTSV(name):
 # Native implementation for candidate generation at k (simply join all items at k-1)
 #
 
-def candidate(item, words):
-    return [item + ' ' + i for i in words]
+def candidate(items, words):
+    return (([i + ' ' + j for i in items for j in words]))
 
 #In general, we have to look for sets which only differ in their last letter/item.???
 
@@ -85,9 +85,8 @@ while not q.empty():
         fItems[k] = items
         fFreqs[k] = freq
         
-        for item in items:
-            for j in candidate(item, words):
-                q.put(j)
+        for j in candidate(items, words):
+            q.put(j)
         k += 1
 
 #print(fItems)
