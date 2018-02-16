@@ -8,8 +8,6 @@ from queue import Queue
 # Support threshold
 thre = int(sys.argv[2])
 
-print('Support threshold: ' + str(thre))
-
 def readTSV(name):
     r = open(name, 'r')
     for line in r:
@@ -92,10 +90,6 @@ while not q.empty():
                 q.put(j)
         k += 1
 
-    print('k: ' + str(k))
- 
-print('The algorithm stopped at: k=' + str(k))
-    
 #print(fItems)
 #print(fFreqs[4])
 
