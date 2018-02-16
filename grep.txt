@@ -1,0 +1,1 @@
+cut -f2 data.tsv | grep -o -i "low blood pressure" | wc -l
