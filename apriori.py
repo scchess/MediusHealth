@@ -82,11 +82,12 @@ while not q.empty():
         fItems[k-1] = items
         fFreqs[k-1] = freq
         
+        # Compute candidate sets at k
         for j in candidate(items, fItems[1]):
             q.put(j)
+            
         k += 1
 
 for i in fItems:
     for j in fItems[i]:
         print(str(j) + ' ' + str(fFreqs[i][j]))
-
