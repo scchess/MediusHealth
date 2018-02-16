@@ -49,9 +49,6 @@ for (x, y) in readTSV(sys.argv[1]):
     # Our cleanup script guarantees no English stopwords, no tabs etc. We just need to break the text by space to get individual words.
     items.update(y.split(' '))
 
-# Make a copy for the words so that we can use it for candidate generation later
-words = items.copy()
-
 # Data structure for breadth-first search
 q = Queue()
 
@@ -82,15 +79,12 @@ while not q.empty():
     items = [i for i in items if freq[i] >= thre]
 
     if len(items) > 0:
-        fItems[k] = items
-        fFreqs[k] = freq
+        fItems[k-1] = items
+        fFreqs[k-1] = freq
         
-        for j in candidate(items, words):
+        for j in candidate(items, fItems[1]):
             q.put(j)
         k += 1
-
-#print(fItems)
-#print(fFreqs[4])
 
 for i in fItems:
     for j in fItems[i]:
