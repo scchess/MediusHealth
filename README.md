@@ -3,3 +3,4 @@
 * http://paulallen.ca/documents/2015/04/borgelt-c-frequent-item-set-mining-2012.pdf/
 * https://www.singularities.com/blog/2015/08/apriori-vs-fpgrowth-for-frequent-item-set-mining
 * https://www.slideshare.net/INSOFE/apriori-algorithm-36054672
+* http://www.hackerearth.com/blog/machine-learning/beginners-tutorial-apriori-algorithm-data-mining-r-implementation/
