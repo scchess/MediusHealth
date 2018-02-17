@@ -59,7 +59,7 @@ if __name__ == "__main__":
         for item in items:
             q.put(item)
 
-        # Start off with k=2 (individual words at k=1 computed in the loop above)
+        # Candidate item sets of length 
         k = 2
 
         fItems = {}
