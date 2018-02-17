@@ -75,7 +75,7 @@ if __name__ == "__main__":
             while not q.empty():
                 items.add(q.get())
 
-            # Count all items at k
+            # Count the items
             freq = count(items, trans) 
 
             # Prunce away all items that are smaller than the support threshold. We can do this because of apriori property.
