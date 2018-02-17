@@ -58,8 +58,11 @@ if __name__ == "__main__":
         # Candidate item sets of length 
         k = 2
 
-        fItems = {}
-        fFreqs = {}
+        # Frequent items
+        fi = {}
+        
+        # Counts for the frequent items
+        fc = {}
 
         #
         # Apply breadth-first search with pruning
@@ -68,7 +71,7 @@ if __name__ == "__main__":
         while not q.empty():
             items = set()
     
-            # Get all items from the queue, more effiicient for frequency counting
+            # Get all items from the queue, more effiicient for counting the items
             while not q.empty():
                 items.add(q.get())
 
@@ -79,15 +82,15 @@ if __name__ == "__main__":
             items = [i for i in items if freq[i] >= thre]
 
             if len(items) > 0:
-                fItems[k-1] = items
-                fFreqs[k-1] = freq
+                fi[k-1] = items
+                fc[k-1] = freq
         
                 # Compute candidate sets at k
-                for j in candidate(items, fItems[1]):
+                for j in candidate(items, fi[1]):
                     q.put(j)
             
                 k += 1
 
-        for i in fItems:
-            for j in fItems[i]:
-                print(str(j) + '\t' + str(fFreqs[i][j]))
+        for i in fi:
+            for j in fi[i]:
+                print(str(j) + '\t' + str(fc[i][j]))
