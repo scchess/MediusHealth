@@ -35,11 +35,10 @@ if __name__ == "__main__":
         #
 
         def count(items, trans):
-            x = {i:0 for i in items}
-    
+            x = {i:0 for i in items}    
             for tran in trans:
                 for item in items:
-                    x[item] += tran.count(item)
+                    x[item] += tran.split(' ').count(item)
             return x
     
         # Transactions (e.g. medical records)
@@ -78,7 +77,7 @@ if __name__ == "__main__":
             # Count the items
             freq = count(items, trans) 
 
-            # Prunce away all items that are smaller than the support threshold. We can do this because of apriori property.
+            # Prunce away all items that are smaller than the support threshold. We can do this because of the apriori property.
             items = [i for i in items if freq[i] >= thre]
 
             if len(items) > 0:
