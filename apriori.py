@@ -11,7 +11,7 @@ if __name__ == "__main__":
     if len(sys.argv) != 3:
         print(('\nRun with python3 apriori.py data.tsv 10 where 10 is the support threshold'))
     else:
-        # Support threshold
+        # Support threshold (no type checking assuming it's an integer)
         thre = int(sys.argv[2])
 
         def readTSV(name):
