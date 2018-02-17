@@ -6,11 +6,11 @@
 #
 # Generate TSV outputs to console. To run this script without filtering for topics:
 #
-#   python3 clean.py machine_learning_challenge.xlsx
+#   python3 preprocess.py.py machine_learning_challenge.xlsx
 #
 # To run this script with filtering for topics:
 #
-#   python3 clean.py machine_learning_challenge.xlsx "low blood pressure"
+#   python3 preprocess.py.py machine_learning_challenge.xlsx "low blood pressure"
 #
 # Only simple string matching is implemented for filtering. Topic posts are converted to lower case.
 # Generate TSV format to console.
@@ -22,8 +22,8 @@ from xlrd import open_workbook
 
 if __name__ == "__main__":
     if len(sys.argv) != 2 and len(sys.argv) != 3:
-        print(('\nGenerate TSV outputs to console. To run this script without filtering for topic:\n\n  python3 clean.py machine_learning_challenge.xlsx\n\n'
-               'To run this script with filtering for topics:\n\n  python3 clean.py machine_learning_challenge.xlsx "low blood pressure"\n\n'
+        print(('\nGenerate TSV outputs to console. To run this script without filtering for topic:\n\n  python3 preprocess.py.py machine_learning_challenge.xlsx\n\n'
+               'To run this script with filtering for topics:\n\n  python3 preprocess.py.py machine_learning_challenge.xlsx "low blood pressure"\n\n'
                'Only simple string matching is implemented for filtering. Topic posts are converted to lower case.\n'))
     else:
         topic = None if len(sys.argv) != 3 else sys.argv[2].lower()
