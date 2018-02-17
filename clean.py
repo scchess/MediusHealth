@@ -41,7 +41,7 @@ if __name__ == "__main__":
                     # Remove unnecessary spaces/new lines
                     x = x.replace('\r', ' ').replace('\n', ' ').replace('\t', ' ')
 
-                    # Remove common stopwords (e.g. "degree" == "degree.")
+                    # Remove common punctuation marks (e.g. "degree" == "degree.")
                     x = x.replace('.', '').replace('?', '').replace('!', '').replace(',', '')
 
                     # Remove excessive spaces
