@@ -35,9 +35,7 @@ if __name__ == "__main__":
         #
 
         def count(items, trans):
-            x = {}    
-            for item in items:
-                x[item] = 0
+            x = {i:0 for i in items}
     
             for tran in trans:
                 for item in items:
