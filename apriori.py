@@ -42,22 +42,18 @@ if __name__ == "__main__":
                     x[item] += tran.count(item)
             return x
     
-        items = set()
-
         # Transactions (e.g. medical records)
         trans = []
+
+        # Data structure for breadth-first search
+        q = Queue()
 
         for (x, y) in readTSV(sys.argv[1]):
             trans.append(y)
     
             # Our cleanup script guarantees no English stopwords, no tabs etc. We just need to break the text by space to get individual words.
-            items.update(y.split(' '))
-
-        # Data structure for breadth-first search
-        q = Queue()
-
-        for item in items:
-            q.put(item)
+            for i in y.split(' '):
+                q.put(i)
 
         # Candidate item sets of length 
         k = 2
