@@ -1,4 +1,3 @@
-
 lines = []
 with open('data.tsv', 'r') as r:
     for line in r:
@@ -9,7 +8,9 @@ with open('A.txt', 'r') as r:
         key = line.split('\t')[0]
         n = 0
         for line in lines:
-            for word in line.strip().split(' '):
-                if word == key:
-                    n += 1
-        print(str(key) + '\t' + str(n))        
+            line = line.strip()            
+            c1 = line.count(' ' + key + ' ')
+            c2 = 1 if line.startswith(key) else 0
+            c3 = 1 if line.endswith(key) else 0                                    
+            n += (c1 + c2 + c3)
+        print(str(key) + '\t' + str(n))

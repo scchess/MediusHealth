@@ -7,6 +7,7 @@
 #
 
 import sys
+import itertools
 from queue import Queue
 
 if __name__ == "__main__":
@@ -34,11 +35,14 @@ if __name__ == "__main__":
         # Native implementation for counting input items and return a dictionary with the counts
         #
 
-        def count(items, trans):
-            x = {i:0 for i in items}    
+        def count(items, trans, k):
+            x = {i:0 for i in items}
             for tran in trans:
                 for item in items:
-                    x[item] += tran.split(' ').count(item)
+                    c1 = tran.count(' ' + item + ' ')
+                    c2 = 1 if tran.endswith(item) else 0
+                    c3 = 1 if tran.startswith(item) else 0
+                    x[item] += (c1 + c2 + c3)
             return x
     
         # Transactions (e.g. medical records)
@@ -75,7 +79,7 @@ if __name__ == "__main__":
                 items.add(q.get())
 
             # Count the items
-            freq = count(items, trans) 
+            freq = count(items, trans, k) 
 
             # Prunce away all items that are smaller than the support threshold. We can do this because of the apriori property.
             items = [i for i in items if freq[i] >= thre]
@@ -83,7 +87,7 @@ if __name__ == "__main__":
             if len(items) > 0:
                 fi[k-1] = items
                 fc[k-1] = freq
-        
+                
                 # Compute candidate sets at k
                 for j in candidate(items, fi[1]):
                     q.put(j)
