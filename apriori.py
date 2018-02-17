@@ -1,5 +1,7 @@
 #
 # Native implementation for Apriori Algorithm
+#
+# This script assumes the input TSV file come from clean.py.
 # 
 # Run with python3 apriori.py data.tsv 10 where 10 is the support threshold
 #
@@ -22,11 +24,11 @@ if __name__ == "__main__":
                 yield (strs[0], strs[1].strip())
 
         #
-        # Native implementation for candidate generation at k (simply join all items at k-1)
+        # Native implementation for candidate generation (simply join the items)
         #
 
-        def candidate(items, words):
-            return (([i + ' ' + j for i in items for j in words]))
+        def candidate(items, k1):
+            return (([i + ' ' + j for i in items for j in k1]))
 
         #
         # Native implementation for counting input items and return a dictionary with the counts
