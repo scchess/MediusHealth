@@ -41,15 +41,12 @@ if __name__ == "__main__":
                     # Remove unnecessary spaces/new lines
                     x = x.replace('\r', ' ').replace('\n', ' ').replace('\t', ' ')
 
-                    def transform(x):            
-                        # Remove common stopwords (e.g. "degree" == "degree.")
-                        x = x.replace('.', '').replace('?', '').replace('!', '').replace(',', '')
+                    # Remove common stopwords (e.g. "degree" == "degree.")
+                    x = x.replace('.', '').replace('?', '').replace('!', '').replace(',', '')
 
-                        # Remove excessive spaces
-                        return re.sub(' +', ' ', x)
+                    # Remove excessive spaces
+                    x = re.sub(' +', ' ', x)
 
-                    x = "\n".join([transform(line) for line in x.split('\n') if line.strip() != ''])        
-            
                     print(x, end='')
 
                     # Convert output to TSV format
