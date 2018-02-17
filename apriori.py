@@ -44,7 +44,7 @@ if __name__ == "__main__":
     
         items = set()
 
-        # Transactions (e.g. column 1)
+        # Transactions (e.g. medical records)
         trans = []
 
         for (x, y) in readTSV(sys.argv[1]):
