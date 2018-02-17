@@ -1,5 +1,5 @@
 #
-# Clean up and prepare the data for machine learning challenge. Written for Python 3.
+# Prepare data for machine learning challenge. Written for Python 3.
 #
 # This script assumes two columns in the input Excel file. The first column is the topic of a post, the second column
 # is the text from the post.
