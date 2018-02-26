@@ -1,4 +1,0 @@
-cut -f2 data.tsv | grep -o -i "a" | wc -l
-cut -f2 data.tsv | grep -o -i "way" | wc -l
-cut -f2 data.tsv | grep -o -i "when i" | wc -l
-cut -f2 data.tsv | grep -o-i "which" | wc -l
